@@ -1,1 +1,209 @@
 /* ここにcssを書いてみましょう */
+
+@import url(http://yui.yahooapis.com/3.6.0/build/cssreset/cssreset-min.css);
+@import "base.css";
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; 
+}
+
+#wrap{
+  position:relative;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.47);
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  width: 960px;
+
+  margin: 0px auto;
+}
+
+#body{
+  margin: 0px 10px;
+}
+
+#about {
+}
+
+#about ol:after{
+  content: "";
+  display: block;
+  clear: both; 
+}
+
+#about ol li{
+  float: left;
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  width: 30%;
+  margin-right: 1%;
+
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.13);
+
+
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 50%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 50%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 50%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F5F5F5), color-stop(0.5, #FFFFFF));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 50%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to top, #F5F5F5 0%, #FFFFFF 50%);
+
+}
+
+#about ol li:first-child{
+  margin-left: 1%;
+}
+  
+#about ol li:last-child{
+  margin: 0px;
+}
+
+#about ol li h2{
+  border-right: 1px solid whitesmoke;
+
+  display: table-cell;
+  vertical-align: middle;
+  width: 100px;
+  font-weight: bold;
+  font-size: large;
+}
+
+#about ol li p{
+  display: table-cell;
+  padding: 10px;
+}
+
+div.breadcrumbs{
+  margin: 10px 0px;
+}
+
+div.breadcrumbs ol:after{
+  content: "";
+  display: block;
+  clear: both; 
+
+}
+
+div.breadcrumbs ol li{
+  float: left;
+}
+
+div.breadcrumbs ol li a{
+  text-decoration: none;
+  padding: 5px;
+}
+
+div.breadcrumbs ol li a:after{
+  content: " > ";
+}
+
+#main{
+  width: 78%;
+  float: left;
+}
+
+
+#articles{
+  width: 80%;
+  float: right;
+}
+
+#articles h2{
+  font-size: x-large;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  padding: 0px 5px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid silver;
+  
+  -moz-box-shadow: 0px 1px 0px #FFF;
+  -webkit-box-shadow: 0px 1px 0px #FFF;
+  box-shadow: 0px 1px 0px #FFF;
+}
+
+#articles article{
+  background-color: #fafafa;
+  margin-bottom: 20px;
+  padding: 20px;
+  content: " "
+  
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.13);
+}
+
+#articles article header{
+  border-bottom: 1px solid silver;
+  
+  -moz-box-shadow: 0px 1px 0px #FFF;
+  -webkit-box-shadow: 0px 1px 0px #FFF;
+  box-shadow: 0px 1px 0px #FFF;
+}
+
+#main h3 + ul{
+  width: 20%;
+}
+
+#body:after{
+  content: "";
+  display: block;
+  clear: both; 
+
+}
+
+#sub{
+  float: left;
+  width: 20%;
+  padding-top: 10px;
+  margin-left: 2%;
+}
+
+#sub .ad{
+  width: 100%;
+  height: 180px;
+  background-color: tomato;
+  
+  margin-bottom: 10px;
+
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  
+  content: " "
+}
+
+footer#footer{
+  background-color: #333;
+  height: 80px;
+  content: " "
+}
